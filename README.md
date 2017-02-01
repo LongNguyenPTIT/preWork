@@ -21,10 +21,8 @@ The following **optional** features are implemented:
 
 
 The following **additional** features are implemented:
-* [x] User can choose and set color application with 8 color.
+* [x] User can choose and set color application with 8 color and theme Mode.
 * [x] User can split the bill with their friends.
-
-- [ ] List anything else that you can get done to improve the app functionality!
 * [ ] Share result on Facebook
 
 ## Video Walkthrough 
