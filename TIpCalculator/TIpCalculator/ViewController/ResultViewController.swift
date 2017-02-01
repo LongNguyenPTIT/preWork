@@ -33,11 +33,14 @@ class ResultViewController: UIViewController {
     var colorModel = Singleton.Instance.Color
     var currentSymbol = Singleton.Instance.currencySymbol
     var currentCode = Singleton.Instance.currencyCode
+    let formmatter = NumberFormatter()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        formmatter.numberStyle = .decimal
         backBarItem.tintColor = colorModel.numberColor
-        billAmountLabel.text = "\(currentSymbol) \(tipModel.billAmount)"
+        billAmountLabel.text = "\(currentSymbol) \(formmatter.string(from: NSNumber(value: tipModel.billAmount))!)"
         splitTheBillView.isHidden = true
         
         
@@ -103,9 +106,9 @@ class ResultViewController: UIViewController {
     
     func calculateEverything(tipPercentage: Int) {
         tipRateLabel.text = "\(tipPercentage)%"
-        tipAmountLabel.text = "\(currentSymbol) \(tipModel.tipAmount)"
-        totalLabel.text = " \(tipModel.totalAmount) \(currentCode)"
-        costPerPersonLabel.text = " \(tipModel.totalPerPerson) \(currentCode)"
+        tipAmountLabel.text = "\(currentSymbol) \(formmatter.string(from: NSNumber(value: tipModel.tipAmount))!)"
+        totalLabel.text = " \(formmatter.string(from: NSNumber(value: tipModel.totalAmount))!) \(currentCode)"
+        costPerPersonLabel.text = " \(formmatter.string(from: NSNumber(value: tipModel.totalPerPerson))!) \(currentCode)"
         
     }
     
