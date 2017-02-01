@@ -38,7 +38,7 @@ Here's a walkthrough of implemented user stories:
 
 
 
-<a href="http://imgur.com/TIHabGe"><img src="https://github.com/longnalou91/Tip_Calculator/blob/master/prework.gif" title="source: imgur.com" /></a>
+<a href="http://imgur.com/TIHabGe"><img src="https://github.com/LongNguyenPTIT/preWork/blob/master/prework.gif" title="source: imgur.com" /></a>
 
 
 
